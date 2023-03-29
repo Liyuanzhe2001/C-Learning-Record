@@ -1,0 +1,47 @@
+# Project: 02-数据类型
+# Makefile created by Dev-C++ 6.7.5
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = sizeof关键字.o 实型(浮点型).o 字符型.o 转义字符.o 字符串型.o bool类型.o 数据的输入.o
+LINKOBJ  = sizeof关键字.o 实型(浮点型).o 字符型.o 转义字符.o 字符串型.o bool类型.o 数据的输入.o
+LIBS     = -L"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/" -L"c:/software/dev-cpp/mingw32/lib/gcc/" -L"c:/software/dev-cpp/mingw32/mingw32/lib/" -L"c:/software/dev-cpp/mingw32/lib/" -L"C:/software/Dev-Cpp/MinGW32/lib" -L"C:/software/Dev-Cpp/MinGW32/mingw32/lib" -g3 -static
+INCS     = -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"c:/software/dev-cpp/mingw32/include" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+CXXINCS  = -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/mingw32" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/backward" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"c:/software/dev-cpp/mingw32/include" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+BIN      = 02-数据类型.exe
+CXXFLAGS = $(CXXINCS) -Wall -Wextra -g3
+ENCODINGS = -finput-charset=utf-8 -fexec-charset=gbk
+CFLAGS   = $(INCS) -Wall -Wextra -g3
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "$(BIN)" $(LIBS)
+
+sizeof关键字.o: sizeof关键字.cpp
+	$(CPP) -c sizeof关键字.cpp -o sizeof关键字.o $(CXXFLAGS) 
+
+实型(浮点型).o: 实型(浮点型).cpp
+	$(CPP) -c 实型(浮点型).cpp -o 实型(浮点型).o $(CXXFLAGS) 
+
+字符型.o: 字符型.cpp
+	$(CPP) -c 字符型.cpp -o 字符型.o $(CXXFLAGS) 
+
+转义字符.o: 转义字符.cpp
+	$(CPP) -c 转义字符.cpp -o 转义字符.o $(CXXFLAGS) 
+
+字符串型.o: 字符串型.cpp
+	$(CPP) -c 字符串型.cpp -o 字符串型.o $(CXXFLAGS) 
+
+bool类型.o: bool类型.cpp
+	$(CPP) -c bool类型.cpp -o bool类型.o $(CXXFLAGS) 
+
+数据的输入.o: 数据的输入.cpp
+	$(CPP) -c 数据的输入.cpp -o 数据的输入.o $(CXXFLAGS) 

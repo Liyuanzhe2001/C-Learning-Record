@@ -1,0 +1,44 @@
+# Project: 数组
+# Makefile created by Dev-C++ 6.7.5
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = 一维数组定义方式.o 一维数组数组名.o 冒泡排序.o 二维数组定义.o 二维数组组名.o 二维数组应用案例.o
+LINKOBJ  = 一维数组定义方式.o 一维数组数组名.o 冒泡排序.o 二维数组定义.o 二维数组组名.o 二维数组应用案例.o
+LIBS     = -L"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/" -L"c:/software/dev-cpp/mingw32/lib/gcc/" -L"c:/software/dev-cpp/mingw32/mingw32/lib/" -L"c:/software/dev-cpp/mingw32/lib/" -L"C:/software/Dev-Cpp/MinGW32/lib" -L"C:/software/Dev-Cpp/MinGW32/mingw32/lib" -g3 -static
+INCS     = -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"c:/software/dev-cpp/mingw32/include" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+CXXINCS  = -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/mingw32" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/backward" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"c:/software/dev-cpp/mingw32/include" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+BIN      = 数组.exe
+CXXFLAGS = $(CXXINCS) -Wall -Wextra -g3
+ENCODINGS = -finput-charset=utf-8 -fexec-charset=gbk
+CFLAGS   = $(INCS) -Wall -Wextra -g3
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "$(BIN)" $(LIBS)
+
+一维数组定义方式.o: 一维数组定义方式.cpp
+	$(CPP) -c 一维数组定义方式.cpp -o 一维数组定义方式.o $(CXXFLAGS) 
+
+一维数组数组名.o: 一维数组数组名.cpp
+	$(CPP) -c 一维数组数组名.cpp -o 一维数组数组名.o $(CXXFLAGS) 
+
+冒泡排序.o: 冒泡排序.cpp
+	$(CPP) -c 冒泡排序.cpp -o 冒泡排序.o $(CXXFLAGS) 
+
+二维数组定义.o: 二维数组定义.cpp
+	$(CPP) -c 二维数组定义.cpp -o 二维数组定义.o $(CXXFLAGS) 
+
+二维数组组名.o: 二维数组组名.cpp
+	$(CPP) -c 二维数组组名.cpp -o 二维数组组名.o $(CXXFLAGS) 
+
+二维数组应用案例.o: 二维数组应用案例.cpp
+	$(CPP) -c 二维数组应用案例.cpp -o 二维数组应用案例.o $(CXXFLAGS) 

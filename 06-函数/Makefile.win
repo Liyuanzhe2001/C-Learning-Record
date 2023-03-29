@@ -1,0 +1,38 @@
+# Project: 06-函数
+# Makefile created by Dev-C++ 6.7.5
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = 函数定义&调用.o 值传递.o 分文件编写.o swap.o
+LINKOBJ  = 函数定义&调用.o 值传递.o 分文件编写.o swap.o
+LIBS     = -L"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/" -L"c:/software/dev-cpp/mingw32/lib/gcc/" -L"c:/software/dev-cpp/mingw32/mingw32/lib/" -L"c:/software/dev-cpp/mingw32/lib/" -L"C:/software/Dev-Cpp/MinGW32/lib" -L"C:/software/Dev-Cpp/MinGW32/mingw32/lib" -g3 -static
+INCS     = -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"c:/software/dev-cpp/mingw32/include" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+CXXINCS  = -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/mingw32" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include/c++/backward" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include" -I"c:/software/dev-cpp/mingw32/include" -I"c:/software/dev-cpp/mingw32/lib/gcc/mingw32/9.2.0/include-fixed"
+BIN      = 06-函数.exe
+CXXFLAGS = $(CXXINCS) -Wall -Wextra -g3
+ENCODINGS = -finput-charset=utf-8 -fexec-charset=gbk
+CFLAGS   = $(INCS) -Wall -Wextra -g3
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "$(BIN)" $(LIBS)
+
+函数定义&调用.o: 函数定义&调用.cpp
+	$(CPP) -c 函数定义&调用.cpp -o 函数定义&调用.o $(CXXFLAGS) 
+
+值传递.o: 值传递.cpp
+	$(CPP) -c 值传递.cpp -o 值传递.o $(CXXFLAGS) 
+
+分文件编写.o: 分文件编写.cpp swap.h
+	$(CPP) -c 分文件编写.cpp -o 分文件编写.o $(CXXFLAGS) 
+
+swap.o: swap.cpp swap.h
+	$(CPP) -c swap.cpp -o swap.o $(CXXFLAGS) 
