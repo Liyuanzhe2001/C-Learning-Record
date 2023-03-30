@@ -128,7 +128,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="结构体中 const使用场景.cpp" />
+    <ClCompile Include="结构体做函数参数.cpp" />
     <ClCompile Include="结构体定义和使用.cpp" />
+    <ClCompile Include="结构体嵌套结构体.cpp" />
+    <ClCompile Include="结构体指针.cpp" />
+    <ClCompile Include="结构体数组.cpp" />
+    <ClCompile Include="结构体案例1.cpp" />
+    <ClCompile Include="结构体案例2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
