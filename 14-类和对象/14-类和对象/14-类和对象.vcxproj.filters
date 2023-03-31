@@ -16,5 +16,67 @@
     <Filter Include="源文件\封装">
       <UniqueIdentifier>{5bc2719c-e9e4-420d-8573-a85ae6c8ea78}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\对象的初始化和清理">
+      <UniqueIdentifier>{31bce3fe-3b38-48a7-a00f-6db2d77e4ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\C++对象模型和this指针">
+      <UniqueIdentifier>{f0564ff9-ec25-4fb1-ac38-6e93c7d98d71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="封装的意义%282%29-示例一.cpp">
+      <Filter>源文件\封装</Filter>
+    </ClCompile>
+    <ClCompile Include="封装的意义%281%29-示例二.cpp">
+      <Filter>源文件\封装</Filter>
+    </ClCompile>
+    <ClCompile Include="封装的意义(2).cpp">
+      <Filter>源文件\封装</Filter>
+    </ClCompile>
+    <ClCompile Include="struct和class区别.cpp">
+      <Filter>源文件\封装</Filter>
+    </ClCompile>
+    <ClCompile Include="成员属性设置为私有.cpp">
+      <Filter>源文件\封装</Filter>
+    </ClCompile>
+    <ClCompile Include="构造函数和析构函数.cpp">
+      <Filter>源文件\对象的初始化和清理</Filter>
+    </ClCompile>
+    <ClCompile Include="构造函数的分类及调用.cpp">
+      <Filter>源文件\对象的初始化和清理</Filter>
+    </ClCompile>
+    <ClCompile Include="拷贝构造函数调用时机.cpp">
+      <Filter>源文件\对象的初始化和清理</Filter>
+    </ClCompile>
+    <ClCompile Include="构造函数调用规则.cpp">
+      <Filter>源文件\对象的初始化和清理</Filter>
+    </ClCompile>
+    <ClCompile Include="深拷贝与浅拷贝.cpp">
+      <Filter>源文件\对象的初始化和清理</Filter>
+    </ClCompile>
+    <ClCompile Include="初始化列表.cpp">
+      <Filter>源文件\对象的初始化和清理</Filter>
+    </ClCompile>
+    <ClCompile Include="类对象作为类成员.cpp">
+      <Filter>源文件\对象的初始化和清理</Filter>
+    </ClCompile>
+    <ClCompile Include="静态成员-静态成员变量.cpp">
+      <Filter>源文件\对象的初始化和清理</Filter>
+    </ClCompile>
+    <ClCompile Include="静态成员-静态成员函数.cpp">
+      <Filter>源文件\对象的初始化和清理</Filter>
+    </ClCompile>
+    <ClCompile Include="成员变量和成员函数分开存储.cpp">
+      <Filter>源文件\C++对象模型和this指针</Filter>
+    </ClCompile>
+    <ClCompile Include="this指针概念.cpp">
+      <Filter>源文件\C++对象模型和this指针</Filter>
+    </ClCompile>
+    <ClCompile Include="空指针访问成员函数.cpp">
+      <Filter>源文件\C++对象模型和this指针</Filter>
+    </ClCompile>
+    <ClCompile Include="const修饰成员函数.cpp">
+      <Filter>源文件\C++对象模型和this指针</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
