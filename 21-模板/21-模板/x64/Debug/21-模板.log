@@ -1,0 +1,14 @@
+﻿  类模板与友元.cpp
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(12,6): error C2182: “printPerson2”: “void” 这一使用无效
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(12,19): error C2065: “Person”: 未声明的标识符
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(12,35): error C2065: “p”: 未声明的标识符
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(12,19): error C3861: “Person”: 找不到标识符
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(12,35): error C3861: “p”: 找不到标识符
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(13,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(26,14): error C2976: “printPerson2”: 模板 参数太少
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(12): message : 参见“printPerson2”的声明
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(36): message : 查看对正在编译的 类 模板 实例化“Person<T1,T2>”的引用
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(26): error C2062: 意外的类型“unknown-type”
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(26,1): error C2238: 意外的标记位于“;”之前
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(49,2): error C3245: “printPerson2”: 使用变量模板需要模板参数列表
+C:\project\C++\study\21-模板\21-模板\类模板与友元.cpp(12): message : 参见“printPerson2”的声明
